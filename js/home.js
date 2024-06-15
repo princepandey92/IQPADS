@@ -33,6 +33,20 @@ $(document).ready(function () {
     }
   );
 
+  // $("#collapsibleNavbar")onclick=>(
+  //   function () {
+  //     $(this).css({
+  //       "background-color": "#00bcd4",
+  //       cursor: "pointer",
+  //     });
+  //   },
+  //   function () {
+  //     $(this).css({
+  //       "background-color": "white",
+  //     });
+  //   }
+  // );
+
   $(".form-control").focus(function () {
     $(".form-control").css("background-color", "transparent");
   });
@@ -42,13 +56,11 @@ $(document).ready(function () {
       $(this).css({
         "background-color": "#00bcd4",
         cursor: "pointer",
-        color: "white",
       });
     },
     function () {
       $(this).css({
         "background-color": "white",
-        color: "black",
       });
     }
   );
@@ -74,7 +86,20 @@ $(document).ready(function () {
     },
     function () {
       $(this).find(".offertext").css({
-        color: "rgb(143, 143, 143)",
+        color: "#344275",
+      });
+    }
+  );
+
+  $(".offersDiv").hover(
+    function () {
+      $(this).find(".offerTextTitle").css({
+        color: "black",
+      });
+    },
+    function () {
+      $(this).find(".offerTextTitle").css({
+        color: "#170339",
       });
     }
   );
@@ -95,24 +120,24 @@ $(document).ready(function () {
   $(".innerServiceDivs").hover(
     function () {
       $(this).find(".servicesTextInner").css({
-        color: "white",
+        color: "black",
       });
     },
     function () {
       $(this).find(".servicesTextInner").css({
-        color: "black",
+        color: "#170339",
       });
     }
   );
   $(".innerServiceDivs").hover(
     function () {
       $(this).find(".offertext").css({
-        color: "rgba(255, 255, 255, 0.804)",
+        color: "white",
       });
     },
     function () {
       $(this).find(".offertext").css({
-        color: "rgb(143, 143, 143)",
+        color: "#344275",
       });
     }
   );
