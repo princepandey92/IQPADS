@@ -2,35 +2,50 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
 }
 
 
 
 body {
   width: 100%;
+  background-color: #170339;
   overflow-x: hidden;
+  font-family: 'Times New Roman', Times, serif;
+
 }
 
 .header{
   height:100px;
+ 
+  background-repeat: repeat;
 }
 
+.header-line{
+  box-sizing: border-box;
+  background-color: #00bcd4;
+  height: 5px;
+  
+}
 .row {
   margin: 0;
   padding: 0;
 }
 
+
 .headerText {
-  font-family: fangsong;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .grid-container-logo-title{
   height: 100px;
-  width: 400px;
+  width: 500px;
   display: grid;
   grid-template-columns: 0.1fr 2fr;
   grid-template-rows: 1fr 1fr;
-  margin-left: -3rem;
+  margin-left: -3.5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  letter-spacing: 2px;
 }
 
 .grid-item-logo{
@@ -48,13 +63,14 @@ body {
   margin: 0;
   color: #00bcd4;
   font-weight: 600;
+  letter-spacing: 3px;
 }
 
 .grid-item-slogan{
   justify-self: start;
   align-self: start;
   margin:0;
-  color: #170339;
+  color: #e9e5ef;
 }
 
 .italianno-regular {
@@ -72,23 +88,22 @@ background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
   top: 0;
   z-index: 5;
   height: 70px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-stretch:extra-expanded
 }
 
 .navbarContainer {
   max-width: 1650px;
 }
 
-#collapsibleNavbar{
-  height: 100%;
-  background-color:#2BD2FF;
-  opacity: 0.9;
-}
-#collapsibleNavbar #contact{
+ 
+
+/* #collapsibleNavbar #contact{
 border-radius: 0px;
 background-color: #2BD2FF;
 text-align: left;
 color: #000000a6;
-}
+} */
 
 .items {
   font-family: fangsong;
@@ -100,24 +115,26 @@ color: #000000a6;
 .nav-link:hover {
   text-decoration: underline;
   text-underline-offset: 20px;
-  text-decoration-color: black;
+  text-decoration-thickness: 2px;
+  text-decoration-color:white;
   color:white;
   text-shadow: 5px 5px 5px  red;
 }
 
 .nav-link {
-  font-size: 22px;
-  font-weight: 450;
+  font-size: 18px;
+  font-weight: 350;
+  
 }
 
-#contact{
+/* #contact{
   width: 150px;
   height: 55px;
   color: #170339;
   background-color: antiquewhite;
   border-radius: 30px;
   text-align: center;
-}
+}  */
 
 .btn-custom {
   color: #00bcd4;
@@ -155,7 +172,7 @@ color: #000000a6;
  width: 90%;
  height:700px;
  padding-left: 9%;
- padding-top: 1rem;
+ padding-top: 0.2rem;
  padding-bottom: 1rem;
  border-radius: 40px;
  
@@ -261,19 +278,26 @@ label {
 }
 
 .offersDiv:hover {
-  background-color: #00bcd4;
   border-top-left-radius: 25px;
   border-bottom-right-radius: 25px;
   box-shadow: 5px 5px 5px 5px #886ebc ;
+}
+
+.offerTextTitle{
+  color:#170339;
+  font-weight: 700;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 .offericons {
   color: #00bcd4;
   font-size: 100px;
 }
-.offertext {
+.offertext{
   font-size: 20px;
-  color: rgb(143, 143, 143);
+  font-weight: 300;
+  color: #344275;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 .iconsServices {
   background-color: #00bcd4;
@@ -290,9 +314,6 @@ label {
   position: absolute;
   top: 14%;
   left: 19%;
-}
-.servicesTextInner {
-  color: black;
 }
 
 .card-container{
@@ -464,6 +485,7 @@ li div h4 {
 
 .footer {
  background-color: #170339; 
+ 
 }
 
 .colorOverImage {
@@ -490,22 +512,36 @@ ul li {
 .footer-container {
   display: flex;
   justify-content: space-between;
+ flex-direction: row;
+
+ 
 }
 
 .footer-left-container{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  
 }
 
 .social-media-icons{
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: start;
+  flex-wrap: wrap;
+  width: 200px;
+  margin-left: -1rem;
 }
 
 .quick-link-container{
   display: flex;
   flex-direction: column;
+  font-weight: 700;
+ 
+}
+
+li{
+  height: 40px;;
 }
 
 .footer-link{
@@ -521,7 +557,36 @@ ul li {
 .footer-right-container{
   display: flex;
   flex-direction: column;
-  margin-right: 6rem;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  margin-top: 3rem;
+}
+
+
+.footer-right-container-inner{
+display: flex;
+flex-direction: column;
+justify-content: start;
+align-items: start;
+margin-left: -6rem;
+margin-top: 3rem;
+width: 200px;
+height: 200px;
+}
+
+.column{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.footer-right-container h1{
+text-decoration: underline;
+text-decoration-thickness: 2px;
+text-underline-offset: 10px;
+margin-left: -6rem;
 }
 
 .lastFooter{
@@ -579,6 +644,12 @@ text-decoration: overline;
      width: 4rem;
      height: 2rem;
    }
+
+   #collapsibleNavbar{
+    background-color: #00bcd4;
+    height: 200px;
+    opacity: 0.9;
+  } 
 
   .card-container{
     background-color: #170339;
