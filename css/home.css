@@ -29,6 +29,7 @@ body {
   display: grid;
   grid-template-columns: 0.1fr 2fr;
   grid-template-rows: 1fr 1fr;
+  margin-left:-3rem;
 }
 
 .grid-item-logo{
@@ -544,7 +545,57 @@ text-decoration: overline;
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 380px) {
+  .carousel-img{
+    width: 90%;
+    height:400px;
+    padding-left: 9%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 30px;
+    
+   }
+   
+   .carousel-caption{
+   background-color: #170339;
+   font-size: 0.6rem;
+   font-weight: 200;
+   border-radius: 0.5rem;
+   }
+   
+   .carousel-caption:hover{
+     box-shadow: 0px 4px 5px 5px #00bcd4;
+     
+   }
+   
+   .carousel-arrow {
+     width: 2rem;
+     height: 1rem;
+     transition: width 0.5s ease-in, height 0.5s ease-in;  
+   }
+   
+   .carousel-arrow:hover{
+     width: 4rem;
+     height: 2rem;
+   }
+
+  .card-container{
+    background-color: #170339;
+    color: white;
+    height: 6rem;
+    box-sizing: border-box;
+  }
+  
+  .animation-container{
+    margin-left: 1rem;
+    font-size: 26px;
+    font-weight: 500;
+    min-width: 280px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-top: 2rem;
+    }
+
   
 }
 
