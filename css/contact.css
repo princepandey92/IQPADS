@@ -165,3 +165,10 @@ label {
 #button-primary:hover i {
   display: inline;
 }
+
+@media screen and (min-width: 600px) {
+ .container-2 {
+  justify-content: center;
+  align-items: center;
+}
+}
