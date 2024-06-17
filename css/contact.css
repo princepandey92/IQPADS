@@ -93,6 +93,12 @@ body {
   background-color: #9a93a6;
   padding: 1rem;
 }
+
+.row:hover{
+  box-shadow: 0.25rem 0.25rem 0.25rem 0.25rem var(--color-white-2);
+  border-radius: 2rem;
+}
+
 form {
   padding: 1rem;
   background-color: #9a93a6;
