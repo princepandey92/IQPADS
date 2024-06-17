@@ -1,0 +1,265 @@
+
+/* ___________________SECTION-1 CAROUSEL PART__________________ */
+
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
+.carousel-item{
+  background-color: var(--color-blue-1);
+}
+
+.carousel-img{
+ width: 90%;
+ height:700px;
+ padding-left: 9%;
+ padding-top: 0.2rem;
+ padding-bottom: 1rem;
+ border-radius: 40px;
+ opacity: 0.5;
+ 
+}
+
+.carousel-caption{
+font-family: var(--font-family-title);
+font-size: 1.2rem;
+font-weight: 500;
+border-radius: 0.5rem;
+}
+
+.carousel-caption:hover{
+  box-shadow: 0px 4px 5px 5px var(--color-blue-2);
+}
+
+.carousel-arrow {
+  width: 2rem;
+  height: 1rem;
+  transition: width 0.5s ease-in, height 0.5s ease-in;  
+}
+
+.carousel-arrow:hover{
+  width: 5rem;
+  height: 3rem;
+}
+
+/* ___________________SECTION-2 BEFORE ANIMATION__________________ */
+
+.offersDiv {
+  background-color: var(--color-white-1);
+  display: flex;
+}
+
+.offersDiv:hover {
+  background-color: var(--color-blue-2);
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 5px 5px 5px 5px var(--color-blue-4) ;
+}
+
+.offerTextTitle{
+  color:var(--color-blue-6);
+  font-weight: 700;
+  font-family:var(--font-family-title);
+}
+
+.offericons {
+  color: var(--color-blue-2);
+  font-size: 100px;
+}
+.offertext{
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--color-blue-5);
+  font-family:var(--font-family-subtitle);
+}
+.iconsServices {
+  background-color: var(--color-blue-2);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  position: relative;
+}
+.iconsServices span {
+  font-size: 64px;
+  line-height: 1.2;
+  position: absolute;
+  top: 14%;
+  left: 19%;
+}
+
+
+/* ___________________SECTION-3 ANIMATION__________________ */
+
+
+.card-container{
+  background-color: var(--color-blue-1);
+  color: var(--color-white-1);
+  height: 7rem;
+  box-sizing: border-box;
+}
+
+.animation-container{
+  margin-left: 1rem;
+  font-size: 34px;
+  font-weight: 500;
+  min-width: 280px;
+  font-family:var(--font-family-title);
+  text-align: center;
+  padding-top: 2rem;
+  }
+  
+  .animated-text{
+  position: relative;
+  }
+  
+  .animated-text::before{
+    content:"Excellence";
+    color: var(--color-orange);
+    animation: words 20s infinite;
+    }
+  
+  .animated-text::after{
+      content:"";
+      position: absolute;
+      width: calc(100% + 8px);
+      height: 65px;
+      background-color: var(--color-blue-1);
+      border-left: 2px solid var(--color-orange);
+      right: -8px;
+      animation: cursor .8s infinite, typing 20s steps(14) infinite;
+  
+    }
+  
+  @keyframes cursor {
+    to{
+      border-left:2px solid var(--color-blue-3);
+    }
+  }
+  
+  @keyframes words {
+    0%,20%{
+      content: "Excellence";
+    }
+    21%,40%{
+      content: "Discipline";
+    }
+    41%,60%{
+      content: "Ethics";
+    }
+    61%,80%{
+      content: "Integrity";
+    }
+    81%,100%{
+      content: "Quality";
+    }
+  }
+  
+  @keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+      width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85%,100%{
+      width: calc(100% + 8px);
+    }
+  }
+
+
+  /* ___________________SECTION-4 AFTER ANIMATION__________________ */
+
+
+.innerServiceDivs {
+  transition: transform 1s;
+  width:500px;
+}
+
+.innerServiceDivs:hover {
+box-shadow: 5px 5px 5px 5px var(--color-blue-1);
+border-radius:25px;
+transform: scale(1.05,1.05);
+}
+
+.iconsServices span {
+  color: var(--color-white-1);
+}
+
+
+
+/* ___________________SECTION-5 MEDIA QUERY__________________ */
+
+
+@media screen and (min-width: 1400px) {
+  .blogsContainer {
+    max-width: 2132px;
+  }
+  .footerContainer {
+    max-width: 2033px;
+  }
+}
+
+
+@media screen and (max-width: 1400px) {
+  .offersDiv {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .carousel-img{
+    width: 90%;
+    height:400px;
+    padding-left: 10%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 30px; 
+   }
+   
+   .carousel-caption{
+   background-color: #170339;
+   font-size: 0.6rem;
+   font-weight: 200;
+   border-radius: 0.5rem;
+   }
+   
+   .carousel-caption:hover{
+     box-shadow: 0px 4px 5px 5px #00bcd4;
+     
+   }
+   
+   .carousel-arrow {
+     width: 2rem;
+     height: 1rem;
+     transition: width 0.5s ease-in, height 0.5s ease-in;  
+   }
+   
+   .carousel-arrow:hover{
+     width: 4rem;
+     height: 2rem;
+   }
+
+
+  .card-container{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    background-color: #170339;
+    color: white;
+    height: 6rem;
+    width: auto;
+
+  }
+  
+  .animation-container{
+    margin-right: auto;
+    font-size: 26px;
+    font-weight: 500;
+    min-width: 285px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding-top: 2rem;
+    }
+
+  
+}
