@@ -95,7 +95,7 @@ body {
   padding: 1rem;
 }
 
-.row:hover{
+.g-3:hover{
   box-shadow: 0.25rem 0.25rem 0.25rem 0.25rem var(--color-white-2);
   border-radius: 0rem 2rem 0rem 0rem;
 }
