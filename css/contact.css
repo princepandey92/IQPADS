@@ -74,6 +74,7 @@ body {
   color: red;
   background-color: #170339;
   border-radius: 15%;
+  transition: all 1s;
 }
 
 .container-1:hover {
